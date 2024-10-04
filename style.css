@@ -1,0 +1,231 @@
+/* Apply Roboto font globally */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container 01 */
+.container01 {
+    background-color: #1F2937;
+    padding: 20px;
+}
+
+/* Header Row */
+.header {
+    display: flex;
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center;
+    margin-bottom: 40px; /* Adds space after the header */
+}
+
+/* Header Logo */
+.header h3 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Sidebar (Header Links) */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    justify-content: right;
+    align-items: start;
+    
+}
+
+.sidebar ul li a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Topbox (Hero Section) */
+.topbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout for text and image */
+    grid-template-rows: auto; /* Auto height for rows */
+    gap: 20px;
+    align-items: start; /* Align the content to the start */
+}
+
+.card01 {
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    grid-column: 1; /* Place in the first column */
+}
+
+.card02 {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
+    grid-column: 1; /* Place below "This website is awesome" */
+}
+
+/* Image block */
+.topimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2; /* Place in the second column */
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.topimg img {
+    width: 100%;
+    height: auto;
+    background-color: #ccc; /* placeholder */
+}
+
+.signup01 {
+    
+    align-items: start;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+.signup01 button {
+    background-color: #3882f6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.signup01 button:hover {
+    background-color: #306dc2;
+}
+
+/* Container 02 (Random Information Section) */
+.container02 {
+    background-color: #E5E7EB;
+    padding: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.imageblock {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.imageblock img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #3882f6; /* Blue border */
+    box-sizing: border-box;
+}
+
+.imageblock div {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Ensure all images have the same height */
+.imageblock img {
+    object-fit: cover; /* Ensures image scaling without stretching */
+    height: 200px;
+}
+
+/* Container 03 (Quote Section) */
+.container03 {
+    background-color: #d1d5db;
+    padding: 40px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1F2937;
+    text-align: right;
+}
+
+/* Footer (Call to Action) */
+footer {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .action {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+footer .signup02 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer .signup02 button {
+    background-color: #3882f6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: white;
+}
+
+footer .signup02 button:hover {
+    background-color: #306dc2;
+}
+
+/* Footer section alignment */
+footer div {
+    display: inline-flex;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
